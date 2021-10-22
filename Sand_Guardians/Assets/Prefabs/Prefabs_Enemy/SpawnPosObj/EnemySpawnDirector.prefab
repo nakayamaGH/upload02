@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1428595793254755840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1428595793254755842}
+  - component: {fileID: 1428595793254755843}
+  m_Layer: 0
+  m_Name: EnemySpawnDirector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1428595793254755842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428595793254755840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1428595793254755843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428595793254755840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddcbf6caf1ccd44a924cadb19104652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnification: 1.1
+  enemyPorn: {fileID: 2662878372868320741, guid: 518015968b804474b94557d25a13fb92, type: 3}
+  enemyLancer: {fileID: 2377385658679274002, guid: cd723c136f55bbc4faaef0320bf8dcc8, type: 3}
+  enemyKnight: {fileID: 6735750078556478719, guid: 6f91dbcd0c97df342b5ca5fc703b4069, type: 3}
+  enemyStatus_Porn: {fileID: 11400000, guid: acb55d82db559a94883a9060a5dbf30c, type: 2}
+  enemyStatus_Lanacer: {fileID: 11400000, guid: 6f1f7de31b7070341bac61257356a939, type: 2}
+  enemyStatus_Knight: {fileID: 11400000, guid: 8f041dc6c4c46e34084e4b99ef2a023e, type: 2}
+  levelText: {fileID: 0}
+  lerpObj:
+  - {fileID: 5853643504263728836, guid: 6f74ae876496d1b4d8ca9ab2ff2c1dca, type: 3}
+  - {fileID: 8559861468622311193, guid: c54a4652c052e714eb3e248e6d67446d, type: 3}
+  - {fileID: 6363996045309174896, guid: 75dd6e7d9bd99cc4ca40ab30de4c9bcc, type: 3}
+  - {fileID: 6168665716233671391, guid: 77f0b633178002742b32ef9a14965bcc, type: 3}
+  - {fileID: 5853643504263728836, guid: 6f74ae876496d1b4d8ca9ab2ff2c1dca, type: 3}
+  attackTable_Porn: 0a0000000d000000100000001300000016000000190000001c0000001f0000002200000025000000
+  hpTable_Porn: 04000000080000000c0000001000000014000000180000001c000000200000002400000028000000
+  speedTable_Porn:
+  - 2
+  - 2.1
+  - 2.2
+  - 2.3
+  - 2.4
+  - 2.5
+  - 2.6
+  - 2.7
+  - 2.8
+  - 2.9
+  pointTable_Porn: 640000006e00000078000000820000008c00000096000000a0000000aa000000b4000000be000000
+  attackTable_Lancer: 14000000190000001e00000023000000280000002d00000032000000370000003c00000041000000
+  hpTable_Lancer: 060000000c00000012000000180000001e000000240000002a00000030000000360000003c000000
+  speedTable_Lancer:
+  - 5
+  - 5.1
+  - 5.2
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 5.7
+  - 5.8
+  - 5.9
+  pointTable_Lancer: 96000000a5000000b4000000c3000000d2000000e1000000f0000000ff0000000e0100001d010000
+  attackTable_Knight: 14000000180000001c0000002000000024000000280000002c000000300000003400000038000000
+  hpTable_Knight: 14000000280000003c0000005000000064000000780000008c000000a0000000b4000000c8000000
+  speedTable_Knight:
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  - 1
+  - 1
+  - 1
+  - 1
+  - 2
+  pointTable_Knight: 82000000820000008200000082000000820000008200000082000000820000008200000082000000
+  sr:
+  - {fileID: -4595932550100281549, guid: bdab0fd46db885c48b2eb88eb97a61f3, type: 3}
+  - {fileID: 6410616037599193713, guid: bdab0fd46db885c48b2eb88eb97a61f3, type: 3}
+  - {fileID: -7875393948761670347, guid: bdab0fd46db885c48b2eb88eb97a61f3, type: 3}
+  - {fileID: 8810748929610878751, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -7149371478718136880, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: 2992058599336829362, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: 8273598715916126338, guid: 3976da39d1c567d4ba718010830af53d, type: 3}
+  - {fileID: -3763824636803078212, guid: 3976da39d1c567d4ba718010830af53d, type: 3}
+  - {fileID: -8966301255875288918, guid: 3976da39d1c567d4ba718010830af53d, type: 3}
+  - {fileID: 4566099760326480194, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: 7723652632321733531, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -6022894079859659142, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -4394945544779488877, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -6949323471574244179, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -2312543500439347380, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -9009188383509947307, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -2388611721508771250, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -5481205667925448380, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: 3883302593958210567, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: 4594083807023469819, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: 3168654379161990858, guid: 3c572f564de809742b510c15fd240de3, type: 3}
+  - {fileID: -7642239419928554605, guid: 3976da39d1c567d4ba718010830af53d, type: 3}
+  - {fileID: 8596640243658272642, guid: 3976da39d1c567d4ba718010830af53d, type: 3}
+  - {fileID: -3876759189950653258, guid: 3976da39d1c567d4ba718010830af53d, type: 3}
